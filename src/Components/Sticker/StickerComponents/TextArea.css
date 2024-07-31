@@ -1,0 +1,33 @@
+.sticker__text-area { 
+    height: 280px;
+    resize: none;
+    outline: none;
+    border: none;
+    padding: 15px;
+    background-color: #e4e4e4;
+    color: black;
+}
+
+.sticker-red-text{
+    background-color: #e2a2a2;
+}
+
+.sticker-violet-text {
+    background-color: #c7aacf;
+}
+
+.sticker-blue-text {
+    background-color: #84adc3;
+}
+
+.sticker-green-text {
+    background-color: #b7dab7;
+}
+
+.sticker-yellow-text {
+    background-color: #e9e6a3;
+}
+
+.sticker-gray-text {
+    background-color: #c6c4c4;
+}

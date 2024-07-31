@@ -1,0 +1,33 @@
+.sticker {
+    height: 330px;
+    width: 310px;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: flex-end;
+    box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.1);
+    margin: 1rem;
+}
+
+.sticker-red {
+    background-color: #e35656;
+}
+
+.sticker-violet {
+    background-color: #b062c8;
+}
+
+.sticker-blue {
+    background-color: #378dbc;
+}
+
+.sticker-green {
+    background-color: #59a459;
+}
+
+.sticker-yellow {
+    background-color: #e7e750;
+}
+
+.sticker-gray {
+    background-color: gray;
+}

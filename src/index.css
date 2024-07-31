@@ -1,0 +1,12 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  background-color: #e4e4e4;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 3rem;
+}
+
+*{
+  box-sizing: border-box;
+}
