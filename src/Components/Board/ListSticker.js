@@ -1,7 +1,5 @@
-import { useContext } from "react";
 import { Sticker } from "../Sticker/Sticker"
 import styled from "styled-components"
-import { StickerContext } from "../Context/StickerContext";
 
 const StyledListSticker = styled.div`
     display: flex;
@@ -10,11 +8,10 @@ const StyledListSticker = styled.div`
 `;
 
 export const ListSticker = ({stickersCount}) => {
-    const onDelete = useContext(StickerContext);
     return(
         <StyledListSticker>
             {stickersCount.map((sticker) =>
-                <Sticker key={sticker.id} id={sticker.id} onDelete={() => onDelete(sticker.id)}/>
+                <Sticker key={sticker.id} id={sticker.id} />
             )}
         </StyledListSticker>
     )

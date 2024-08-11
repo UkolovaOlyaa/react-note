@@ -1,4 +1,6 @@
+import { useDispatch } from "react-redux";
 import styled from "styled-components";
+import { addSticker } from "../Store/actionCreator";
 
 const StyledMainButton = styled.button`
     background-color: #b062c8; 
@@ -22,25 +24,21 @@ const StyledMainButton = styled.button`
     }
 `;
 
-const StyledButtonOnSticker = styled.button`
-    background-color: transparent;
-    border: none;
-`;
+export const MainButton = ({ isAllowed, children }) => {
+    const dispatch = useDispatch();
 
-export const UniversalButton = ({isAllowed, onClick, mainButton, children}) => {
-
-    const handleClick = () => {
+    const addStickerHandler = () => {
         if (isAllowed) {
-            onClick(); 
+            dispatch(addSticker());
         }
-    }
-    return mainButton ? (
-        <StyledMainButton onClick={handleClick} className={!isAllowed ? 'disabled' : ''}>
+    };
+
+    return (
+        <StyledMainButton
+            onClick={addStickerHandler}
+            className={isAllowed ? '' : 'disabled'}
+        >
             {children}
         </StyledMainButton>
-    ) : (
-        <StyledButtonOnSticker onClick={onClick}>
-            {children}
-        </StyledButtonOnSticker>
     );
-}
+};
