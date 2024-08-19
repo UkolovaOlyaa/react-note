@@ -1,0 +1,24 @@
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.main-botton {
+  background-color: #b062c8;
+  border-radius: 5px;
+  color: black;
+  padding: 0.5rem 1rem;
+  position: absolute;
+  font-weight: bold;
+  top: 1rem;
+  left: 1rem;
+}
+
+.main-botton[disabled] {
+  background-color: grey;
+  cursor: default;
+}
+
+.button-on-sticker {
+  background-color: transparent;
+}
